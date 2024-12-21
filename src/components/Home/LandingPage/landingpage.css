@@ -1,0 +1,60 @@
+.LandingPage{
+ height: 95%;
+ width: 60%;
+ z-index: 10;
+ /* background-image: url("../../../assets/batthern.png"); */
+ background-size: 50px;
+ background-repeat: repeat; 
+ background: linear-gradient(90deg, #2B2724, #1c1c1c, #53544C);
+ box-shadow: 0px 10px 20px #21589F; 
+ border-top: 2px solid #AAD9F6; 
+ border-bottom: 2px solid #AAD9F6;
+ border-radius: 15px;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+} 
+
+.landingPageChild{  
+ height: 97%;
+ width: 97%;
+ border-radius: 10px;
+ border: 2px solid transparent;
+ border-image-source: linear-gradient(to right, rgb(232, 232, 232), rgb(0, 0, 0));
+ border-image-slice: 1;
+ position: absolute; 
+ top: 50%; 
+ left: 50%; 
+ transform: translate(-50%, -50%); 
+}
+
+
+.hexagon {
+
+    height: 50%; /* adjust to control the size  */
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background: linear-gradient(90deg, #2B2724, #1c1c1c, #53544C);
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    box-shadow: 5px 5px 10px 10px #21589F;
+    transform: rotate(-60deg);
+
+  } 
+
+  .hexagonChild {
+    height: 80%; /* adjust to control the size  */
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background: linear-gradient(90deg, #53544C , #1c1c1c, #2B2724);
+    /* box-shadow: -5px 5px 10px 10px #21589F; */
+    transform: rotate(60deg);
+  } 
+
+  @media  (max-width: 900px) {
+    .LandingPage {
+      width: 100%;
+    } 
+  }
