@@ -66,7 +66,7 @@ function Navbar() {
               ))}
             </div>
           </Box>
-          <div className="logo-container">
+          <div className="logo-container" >
             <Typography
               variant="h6"
               component="div"

@@ -1,7 +1,8 @@
+
 .LandingPage{
  height: 95%;
  width: 60%;
- z-index: 10;
+ z-index: 2;
  /* background-image: url("../../../assets/batthern.png"); */
  background-size: 50px;
  background-repeat: repeat; 
@@ -16,6 +17,7 @@
  align-items: center;
 } 
 
+
 .landingPageChild{  
  height: 97%;
  width: 97%;
@@ -29,29 +31,89 @@
  transform: translate(-50%, -50%); 
 }
 
+ .hexagonP{
+  height: 60%; 
+  /* width: 50%; */
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  /* background: linear-gradient(180deg, #2B2724, #1c1c1c, #53544C); */
+  background: linear-gradient(to right, #21589F,#51BAE0);
+  display: flex; 
+  justify-content: center;  
+  align-items: center;
+  /* transform: rotate(-60deg); */
+  z-index: 3;
+ }
+
+ /* .hexagonP:hover{ 
+  background: linear-gradient(to left, #21589F,#51BAE0);
+} */
+
+.hexagonP:hover{
+ box-shadow: 0px 5px 10px 10px #21589F;  
+}
+
 
 .hexagon {
-
-    height: 50%; /* adjust to control the size  */
+    height: 99.5%; 
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: linear-gradient(90deg, #2B2724, #1c1c1c, #53544C);
-    display: flex;
+    /* background-color: aquamarine; */
+    display: flex; 
     justify-content: center;  
     align-items: center;
-    box-shadow: 5px 5px 10px 10px #21589F;
-    transform: rotate(-60deg);
-
   } 
 
+  /* .hexagon:hover{ 
+    background: linear-gradient(to right, #21589F,#51BAE0);
+  } */
+
   .hexagonChild {
-    height: 80%; /* adjust to control the size  */
+    height: 95%;
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background: linear-gradient(to right, #21589F,#51BAE0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hexagonGrandChild {
+    height: 98%;
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: linear-gradient(90deg, #53544C , #1c1c1c, #2B2724);
-    /* box-shadow: -5px 5px 10px 10px #21589F; */
-    transform: rotate(60deg);
-  } 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .hexagonGrandChild:hover{
+    height: 100% !important; 
+  } */
+
+  .hexagonGreatGrandChild{
+    height: 95%;
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background: linear-gradient(90deg, #53544C , #1c1c1c, #2B2724);
+    /* transform: rotate(60deg);   */
+    z-index: 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .hexagonGreatGrandChild:hover{
+    height: 100% !important;
+  } */
+
+  .work{
+    color: white;
+    font-size: 4vw;
+    text-shadow: 3px 10px 5px black;
+  }
 
   @media  (max-width: 900px) {
     .LandingPage {
