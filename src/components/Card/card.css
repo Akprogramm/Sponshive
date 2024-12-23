@@ -1,0 +1,15 @@
+
+.card{
+ position: absolute; 
+ height: 35%;      
+ width: 22%;
+ z-index: 5;      
+ background: linear-gradient(360deg, #2B2724, #1c1c1c, #53544C);
+ border: 1px solid white;
+ border-radius: 10px;
+}
+
+.card1{
+    left: -20px;
+    top: 70px;
+}

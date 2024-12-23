@@ -5,7 +5,7 @@ import LandingPage from './LandingPage/LandingPage'
 
 const Home = () => {
   return (
-    <div className='home'> 
+    <div className='home'>
     <LandingPage/>  
     <img src={fabric} alt=""/>
     </div>

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import './landingpage.css'
 import Navbar from "../../Navbar/Navbar"
+import Card from '../../Card/Card'
 
 const LandingPage = () => {
-  // const [hexagonGreatGrandChild,setHexagonGreatGrandChild] = useState(false); 
+  const [work2,setWork2] = useState(false); 
   return (
     <div className='LandingPage' >
       <div className="hexagonP" id="hexagonP" > 
@@ -11,16 +12,27 @@ const LandingPage = () => {
             <div className="hexagonChild" id="hexagonChild" >
               <div className="hexagonGrandChild" id="hexagonGrandChild">
               <div  className="hexagonGreatGrandChild" id="hexagonGreatGrandChild">
-                <div className="work" >SPONSHIVE</div>
+                <div className={`work ${(work2==true) ? " work2" : "" }`} 
+                onMouseEnter={()=>{
+                  setWork2(true); 
+                }}
+                 
+                onMouseLeave={()=>{
+                  setWork2(false);
+                }}
+                >SPONSHIVE</div>
               </div> 
-              </div>
+              </div> 
             </div>
           </div>
           </div> 
 
-        <div className="landingPageChild">
+        <Card card={"card1"}/>
+        <Card card={"card2"}/>
+        <Card card={"card3"}/>  
+        <div className="landingPageChild">   
             <Navbar />
-        </div>
+        </div> 
     </div>
   )
 }
