@@ -3,7 +3,7 @@
  height: 95%;
  width: 60%;
  z-index: 2;
- /* background-image: url("../../../assets/batthern.png"); */
+ /* background-image: url("../../../assets/bright.png"); */
  background-size: 50px;
  background-repeat: repeat; 
  background: linear-gradient(90deg, #2B2724, #1c1c1c, #53544C);
@@ -31,9 +31,10 @@
  transform: translate(-50%, -50%); 
 }
 
- .hexagonP   {
-  height: 60%; 
-  /* width: 50%; */
+ .hexagonP{
+  /* height: 60%;  */
+  height: 50%;
+  width: 35%;
   aspect-ratio: cos(30deg);
   clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
   /* background: linear-gradient(180deg, #2B2724, #1c1c1c, #53544C); */
@@ -41,36 +42,24 @@
   display: flex; 
   justify-content: center;  
   align-items: center;
-  /* transform: rotate(-60deg); */
   z-index: 3;
  }
 
- /* .hexagonP:hover{ 
-  background: linear-gradient(to left, #21589F,#51BAE0);
-} */
-
-.hexagonP:hover{
- box-shadow: 0px 5px 10px 10px #21589F;  
-}
-
-
 .hexagon {
     height: 99.5%; 
+    width: 99.5%;  
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: linear-gradient(90deg, #2B2724, #1c1c1c, #53544C);
-    /* background-color: aquamarine; */
     display: flex; 
     justify-content: center;  
     align-items: center;
   } 
 
-  /* .hexagon:hover{ 
-    background: linear-gradient(to right, #21589F,#51BAE0);
-  } */
 
   .hexagonChild {
     height: 95%;
+    width: 95%;
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: linear-gradient(to right, #21589F,#51BAE0);
@@ -81,6 +70,7 @@
 
   .hexagonGrandChild {
     height: 98%;
+    width: 98%;
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: linear-gradient(90deg, #53544C , #1c1c1c, #2B2724);
@@ -89,30 +79,37 @@
     align-items: center;
   }
 
-  /* .hexagonGrandChild:hover{
-    height: 100% !important; 
-  } */
-
   .hexagonGreatGrandChild{
-    height: 95%;
+    height: 80%;
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: linear-gradient(90deg, #53544C , #1c1c1c, #2B2724);
-    /* transform: rotate(60deg);   */
     z-index: 3; 
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all ease-in-out 1s;
   }
 
-  /* .hexagonGreatGrandChild:hover{
-    height: 100% !important;
-  } */
+  .hexagonGreatGrandChild:hover{
+    transform: rotateY(180deg); 
+  }
+
+  .hexagonGreatGrandChild .work:hover{
+    transform: rotateY(180deg); 
+  }
 
   .work{
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     text-shadow: 3px 10px 5px black;
+    transition: all ease-in-out 1s;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
   }
 
   @media  (max-width: 900px) {
