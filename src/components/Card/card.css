@@ -2,14 +2,71 @@
 .card{
  position: absolute; 
  height: 35%;      
- width: 22%;
+ width: 200px;
  z-index: 5;      
- background: linear-gradient(360deg, #2B2724, #1c1c1c, #53544C);
- border: 1px solid white;
+ background: transparent;
+ background: linear-gradient(360deg, var(--color-dark-4),var(--color-dark-5),var(--color-dark-6));
+ backdrop-filter: blur(2px);
+ border: 1px solid var(--color-white);
  border-radius: 10px;
+ color: var(--color-white);
+ padding: 10px; 
 }
 
-.card1{
+.card1{ 
     left: -20px;
     top: 70px;
 }
+
+.card2{
+    left: 30px;
+    bottom: 15px;
+}
+
+.card3{
+    right: 10px;
+    bottom: 50px;
+}
+
+h2{
+  text-align: center;
+  margin: 0px;
+  text-shadow: 2px 2px var(--color-light-4);
+}
+
+
+.btnCard{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    font-size: large;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: inset -5px -5px 20px 5px var(--color-light-4)
+    , inset 5px 5px 20px 5px var(--color-dark-7);
+
+    transition: all ease-in-out 0.3s;
+}
+    .btnCard:hover{
+     background-color: var(--color-white);
+     font-size: larger;
+     background: transparent;
+    box-shadow: inset -5px -5px 20px 5px rgba(184, 201, 214, 0.776)
+    , inset 5px 5px 20px 5px var(--color-dark-7);
+    }
+
+    .floating {  
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes floating{ 
+        from { transform: translate(0,  0px); }
+        65%  { transform: translate(0, 10px); }
+        to   { transform: translate(0, -0px); }    
+    }

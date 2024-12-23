@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/*  Global colors */
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-dark-1: #2B2724;
+  --color-dark-2: #1c1c1c;
+  --color-dark-3: #53544C;
+  --color-white: white;
+  --color-border: white;
+  --color-text: white;
+  --color-light-1: #21589F;
+  --color-light-2: #AAD9F6;
+  --color-light-3: rgba(184, 201, 214, 0.776);
+  --color-light-4: rgba(76, 131, 170, 0.776);
+  --color-dark-4: rgba(43, 39, 36,.8);
+  --color-dark-5: rgba(28, 28, 28,.8);
+  --color-dark-6: rgba(83, 84, 76,.7);
+  --color-dark-7: rgba(0, 0, 0, 0.776);
+  --color-red: rgb(232, 232, 232);
+}
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
