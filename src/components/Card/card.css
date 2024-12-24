@@ -7,7 +7,7 @@
  background: transparent;
  background: linear-gradient(360deg, var(--color-dark-4),var(--color-dark-5),var(--color-dark-6));
  backdrop-filter: blur(2px);
- border: 1px solid var(--color-white);
+ border: 1px solid var(--color-white); 
  border-radius: 10px;
  color: var(--color-white);
  padding: 10px; 

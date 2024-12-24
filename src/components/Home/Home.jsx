@@ -8,8 +8,8 @@ const Home = () => {
     <div className='home'>
     <LandingPage/>  
     <img src={fabric} alt=""/>
-    </div>
-  )  
+    </div> 
+  )                    
 } 
 
 export default Home

@@ -26,7 +26,7 @@
   /* background-image: url("../../../assets/bright.png"); */
   background-size: 50px;
   background-repeat: repeat; 
-  background: linear-gradient(90deg, var(--color-dark-1), var(--color-dark-2), var(--color-dark-2));
+  background: linear-gradient(90deg, var(--color-dark-1), var(--color-dark-2), var(--color-dark-3));
   box-shadow: 0px 10px 20px var(--color-light-1); 
   border-top: 2px solid var(--color-light-2); 
   border-bottom: 2px solid var(--color-light-2);
