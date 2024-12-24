@@ -22,6 +22,7 @@
 .LandingPage{
   height: 95%;
   width: 60%;
+  /* max-width: 1300px; */
   z-index: 2;
   /* background-image: url("../../../assets/bright.png"); */
   background-size: 50px;
@@ -53,6 +54,7 @@
  
   .hexagonP{
    height: 50%; 
+   width: 35%;
    aspect-ratio: cos(30deg);
    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
    background: linear-gradient(to right, var(--color-light-1),var(--color-light-2));
@@ -68,6 +70,7 @@
  
  .hexagon {
      height: 99.5%; 
+     width: 99.5%; 
      aspect-ratio: cos(30deg);
      clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
      background: linear-gradient(90deg, var(--color-dark-1), var(--color-dark-2), var(--color-dark-3));
@@ -85,6 +88,7 @@
  
    .hexagonChild {
      height: 95%;
+     width: 95%; 
      aspect-ratio: cos(30deg);
      clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
      background: linear-gradient(to right, var(--color-light-1), var(--color-light-2));
@@ -100,6 +104,7 @@
  
    .hexagonGrandChild {
      height: 98%;
+     width: 98%; 
      aspect-ratio: cos(30deg);
      clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
      background: linear-gradient(90deg, var(--color-dark-3), var(--color-dark-2), var(--color-dark-1));

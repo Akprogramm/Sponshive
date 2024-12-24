@@ -1,0 +1,56 @@
+.HiddenCards{
+    z-index: 10;
+    animation: move forwards 1s;
+    transition: all ease-in-out 1s;
+    /* max-width: 1500px; */
+}
+
+@keyframes move{
+    from{
+        width: 30%;
+        height: 30%; 
+    }
+
+    to{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.grow{
+  position: absolute;
+  height: 30%;
+  width: 25%;
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  background: linear-gradient(to right, var(--color-light-1),var(--color-light-2));
+  /* text-align: center;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.growin{
+    position: absolute;
+    height: 98%;
+    width: 98%;
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background: linear-gradient(90deg, var(--color-dark-3), var(--color-dark-2), var(--color-dark-1));
+  }
+
+
+
+.grow1{
+    top: 5%;
+    right: 0%;
+}
+
+.grow2{
+    top: 5%; 
+    left: 0%;
+}
+
+.grow3{
+    bottom: 0%;
+}

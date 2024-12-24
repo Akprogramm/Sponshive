@@ -2,9 +2,18 @@ import React, { useState } from 'react'
 import './landingpage.css'
 import Navbar from "../../Navbar/Navbar"
 import Card from '../../Card/Card'
+import HiddenCards from '../../HiddenCards/HiddenCards.jsx'
+import { useSelector,useDispatch } from 'react-redux';
+import {clickWorkHandler} from '../../../features/Todo/TodoSlice.jsx'
 
 const LandingPage = () => {
   const [work2,setWork2] = useState(false); 
+  const dispatch = useDispatch();
+
+  const handleCardsShow = () => {
+    dispatch(clickWorkHandler());
+  }
+
   return (
     <div className='LandingPage' >
       <div className="hexagonP" id="hexagonP" > 
@@ -20,6 +29,7 @@ const LandingPage = () => {
                 onMouseLeave={()=>{
                   setWork2(false);
                 }}
+                onClick={handleCardsShow}
                 >SPONSHIVE</div>
               </div> 
               </div> 
@@ -27,6 +37,7 @@ const LandingPage = () => {
           </div>
           </div> 
 
+        <HiddenCards /> 
         <Card card={"card1"}/>
         <Card card={"card2"}/>
         <Card card={"card3"}/>  
