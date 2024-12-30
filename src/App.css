@@ -7,5 +7,5 @@ body{
   /* background: linear-gradient(90deg, #2B2724, #1c1c1c, #53544C); */
   /* background: linear-gradient(90deg, var(--color-dark-1), var(--color-dark-2), var(--color-dark-3)); */
   background-image: url("./assets/earth.jpg");
-  background-size: 100% 100%;
+  background-size: 100% 100%; 
 }
